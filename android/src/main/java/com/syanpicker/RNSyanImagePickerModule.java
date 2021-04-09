@@ -166,6 +166,7 @@ public class RNSyanImagePickerModule extends ReactContextBaseJavaModule {
         boolean isWeChatStyle = this.cameraOptions.getBoolean("isWeChatStyle");
         boolean showSelectedIndex = this.cameraOptions.getBoolean("showSelectedIndex");
         boolean compressFocusAlpha = this.cameraOptions.getBoolean("compressFocusAlpha");
+        boolean showCompressButton = this.cameraOptions.getBoolean("showCompressButton");
 
         int modeValue;
         if (imageCount == 1) {
