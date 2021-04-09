@@ -1,5 +1,5 @@
 {
-  "name": "react-native-syan-image-picker",
+  "name": "react-native-im30-image-picker",
   "version": "0.4.11",
   "description": "React-Native 多图片选择 支持裁剪 压缩",
   "main": "src/index.js",
@@ -18,12 +18,12 @@
     "react-native",
     "image",
     "image-picker",
-    "syan",
+    "im30",
     "PictureSelector",
     "TZImagePickerController",
     "Photo"
   ],
-  "author": "syan",
+  "author": "im30",
   "license": "MIT",
   "devDependencies": {
     "@release-it/conventional-changelog": "^2.0.1",
