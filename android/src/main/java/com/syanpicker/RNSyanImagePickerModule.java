@@ -212,6 +212,7 @@ public class RNSyanImagePickerModule extends ReactContextBaseJavaModule {
                 .isWeChatStyle(isWeChatStyle)
                 .theme(showSelectedIndex ? R.style.picture_WeChat_style : 0)
                 .compressFocusAlpha(compressFocusAlpha)
+                .isOriginalImageControl(isOriginalImageControl)
                 .forResult(PictureConfig.CHOOSE_REQUEST); //结果回调onActivityResult code
     }
 
