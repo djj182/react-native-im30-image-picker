@@ -332,7 +332,7 @@ PODS:
     - React-cxxreact (= 0.64.0)
     - React-jsi (= 0.64.0)
     - React-perflogger (= 0.64.0)
-  - RNSyanImagePicker (0.4.11):
+  - RNSyanImagePicker (0.4.12):
     - React
     - TZImagePickerController
   - TZImagePickerController (3.6.0)
