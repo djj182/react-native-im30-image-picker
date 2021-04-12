@@ -16,7 +16,7 @@ import {
   PermissionsAndroid,
 } from 'react-native';
 
-import SYImagePicker from 'react-native-syan-image-picker';
+import SYImagePicker from 'react-native-im30-image-picker';
 
 const {width} = Dimensions.get('window');
 
@@ -25,6 +25,7 @@ export default class App extends Component<{}> {
     super(props);
     this.state = {
       photos: [],
+      isOriginalImageControl: false,
     };
   }
 
@@ -62,6 +63,7 @@ export default class App extends Component<{}> {
           quality: 90,
           compress: true,
           enableBase64: false,
+          isOriginalImageControl: this.state.isOriginalImageControl
         },
         (err, photos) => {
           console.log('开启', err, photos);
@@ -90,6 +92,7 @@ export default class App extends Component<{}> {
         showSelectedIndex: false,
         isGif: true,
         enableBase64: true,
+        isOriginalImageControl: this.state.isOriginalImageControl
       });
       console.log('关闭', photos);
       // 选择成功
@@ -156,6 +159,11 @@ export default class App extends Component<{}> {
     );
   };
 
+  handleShowOriganal = () => {
+    this.setState({
+      isOriginalImageControl: !this.state.isOriginalImageControl
+    });
+  }
   render() {
     const {photos} = this.state;
     return (
@@ -170,6 +178,7 @@ export default class App extends Component<{}> {
             />
             <Button title={'缓存清除'} onPress={this.handleDeleteCache} />
             <Button title={'选择视频'} onPress={this.handleOpenVideoPicker} />
+            <Button title={`显示原图:${this.state.isOriginalImageControl}`} onPress={this.handleShowOriganal} />
           </View>
           <ScrollView style={{flex: 1}} contentContainerStyle={styles.scroll}>
             {photos.map((photo, index) => {
