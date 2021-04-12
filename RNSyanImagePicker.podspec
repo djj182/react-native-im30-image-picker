@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
   s.version       = package["version"]
   s.summary       = package['description']
   s.summary         = "RNSyanImagePicker"
-  s.homepage        = "https://github.com/syanbo/react-native-syan-image-picker"
+  s.homepage        = "https://github.com/djj182/react-native-im30-image-picker"
   s.license         = "MIT"
-  s.author          = { "author" => "hanhun@163.com" }
+  s.author          = { "author" => "2572559095@qq.com" }
   s.platform        = :ios, "7.0"
   s.source          = { :git => "https://github.com/author/RNSyanImagePicker.git", :tag => "master" }
   s.source_files    = "**/*.{h,m}"
