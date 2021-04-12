@@ -1,6 +1,6 @@
 {
   "name": "react-native-im30-image-picker",
-  "version": "0.4.19",
+  "version": "0.4.20",
   "description": "React-Native 多图片选择 支持裁剪 压缩",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -55,5 +55,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "test": "^0.6.0"
   }
 }
