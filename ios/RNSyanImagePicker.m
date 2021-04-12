@@ -214,6 +214,7 @@ RCT_EXPORT_METHOD(openVideoPicker:(NSDictionary *)options callback:(RCTResponseS
     BOOL allowPickingMultipleVideo = [self.cameraOptions sy_boolForKey:@"allowPickingMultipleVideo"];
     BOOL sortAscendingByModificationDate = [self.cameraOptions sy_boolForKey:@"sortAscendingByModificationDate"];
     BOOL showSelectedIndex = [self.cameraOptions sy_boolForKey:@"showSelectedIndex"];
+    BOOL isSelectOriginalPhoto = [self.cameraOptions sy_boolForKey:@"isOriginalImageControl"];
     NSInteger CropW      = [self.cameraOptions sy_integerForKey:@"CropW"];
     NSInteger CropH      = [self.cameraOptions sy_integerForKey:@"CropH"];
     NSInteger circleCropRadius = [self.cameraOptions sy_integerForKey:@"circleCropRadius"];
@@ -232,6 +233,7 @@ RCT_EXPORT_METHOD(openVideoPicker:(NSDictionary *)options callback:(RCTResponseS
     imagePickerVc.allowPickingMultipleVideo = isGif ? YES : allowPickingMultipleVideo;
     imagePickerVc.allowCrop = isCrop;   // 裁剪
     imagePickerVc.modalPresentationStyle = UIModalPresentationFullScreen;
+    imagePickerVc.isSelectOriginalPhoto = isSelectOriginalPhoto;
 
     if (isRecordSelected) {
         imagePickerVc.selectedAssets = self.selectedAssets; // 当前已选中的图片
