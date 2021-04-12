@@ -47,6 +47,10 @@
       }
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djj182/react-native-im30-image-picker.git"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
